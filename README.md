@@ -29,7 +29,7 @@ SharpCast is a C# implementation of the Google ChromeCast V2 protocol.
 #####.StopApp()
 #####.LaunchApp(`string applicationId`)
 #####.GetRunningApp()
-#####.GetAppAvailability()
+#####.GetAppAvailability(`string applicationId`)
 #####.GetStatus()
 
 
