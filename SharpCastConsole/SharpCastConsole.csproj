@@ -49,9 +49,6 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="packages.config" />
-  </ItemGroup>
-  <ItemGroup>
     <ProjectReference Include="..\SharpCast\SharpCastLib.csproj">
       <Project>{25949573-4c7e-4be1-a2c9-d807c64c8c00}</Project>
       <Name>SharpCastLib</Name>

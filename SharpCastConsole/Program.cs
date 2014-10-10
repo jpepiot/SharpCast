@@ -1,6 +1,5 @@
 ﻿namespace SharpCastConsole {
     using System;
-    using System.Diagnostics;
     using SharpCast;
 
     class Program {
@@ -14,8 +13,6 @@
             const string thumbnailUrl = "http://www.ni-mate.com/wp-content/uploads/2012/12/Very_BBB_xmas1_8bit_600px_wide.jpg";
 
             try {
-                //Trace.Listeners.Add(new ConsoleTraceListener());
-
                 Player client = new Player(host);
                 client.Connect();
 
