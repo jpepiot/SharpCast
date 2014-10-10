@@ -1,0 +1,109 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{25949573-4C7E-4BE1-A2C9-D807C64C8C00}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SharpCast</RootNamespace>
+    <AssemblyName>SharpCastLib</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Google.ProtocolBuffers">
+      <HintPath>..\ext\Google.ProtocolBuffers.dll</HintPath>
+    </Reference>
+    <Reference Include="Google.ProtocolBuffers.Serialization">
+      <HintPath>..\ext\Google.ProtocolBuffers.Serialization.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=4.5.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\ext\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CastChannel.cs" />
+    <Compile Include="Channel.cs" />
+    <Compile Include="GenericMediaMetadata.cs" />
+    <Compile Include="InvalidRequestException.cs" />
+    <Compile Include="LoadMediaException.cs" />
+    <Compile Include="MediaMetadataJsonConverter.cs" />
+    <Compile Include="MovieMediaMetadata.cs" />
+    <Compile Include="MusicTrackMediaMetadata.cs" />
+    <Compile Include="PhotoMediaMetadata.cs" />
+    <Compile Include="SetVolumeRequest.cs" />
+    <Compile Include="SeekRequest.cs" />
+    <Compile Include="PauseRequest.cs" />
+    <Compile Include="PlayRequest.cs" />
+    <Compile Include="GetAppAvailabilityRequest.cs" />
+    <Compile Include="Application.cs" />
+    <Compile Include="CloseResponse.cs" />
+    <Compile Include="ConnectMessage.cs" />
+    <Compile Include="GetAppAvailabilityResponse.cs" />
+    <Compile Include="InvalidRequestResponse.cs" />
+    <Compile Include="LaunchErrorResponse.cs" />
+    <Compile Include="LaunchRequest.cs" />
+    <Compile Include="LoadFailedResponse.cs" />
+    <Compile Include="LoadRequest.cs" />
+    <Compile Include="Media.cs" />
+    <Compile Include="MediaMetadata.cs" />
+    <Compile Include="MediaStatus.cs" />
+    <Compile Include="MediaStatusResponse.cs" />
+    <Compile Include="Message.cs" />
+    <Compile Include="PingMessage.cs" />
+    <Compile Include="PingResponse.cs" />
+    <Compile Include="PlayerStateType.cs" />
+    <Compile Include="PongMessage.cs" />
+    <Compile Include="PongResponse.cs" />
+    <Compile Include="Request.cs" />
+    <Compile Include="Response.cs" />
+    <Compile Include="SessionRequest.cs" />
+    <Compile Include="Status.cs" />
+    <Compile Include="StatusRequest.cs" />
+    <Compile Include="StatusResponse.cs" />
+    <Compile Include="StopMessage.cs" />
+    <Compile Include="StopRequest.cs" />
+    <Compile Include="Image.cs" />
+    <Compile Include="Volume.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Player.cs" />
+    <Compile Include="StreamType.cs" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
