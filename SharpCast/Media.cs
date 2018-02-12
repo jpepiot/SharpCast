@@ -17,7 +17,7 @@
         public MediaMetadata Metadata { get; set; }
 
         [JsonProperty("duration")]
-        public double Duration { get; set; }
+        public double? Duration { get; set; }
 
         [JsonProperty("customData")]
         public Dictionary<string, string> CustomData { get; set; }
