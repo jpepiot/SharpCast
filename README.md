@@ -25,34 +25,34 @@ SharpCast is a C# implementation of the Google ChromeCast V2 protocol.
 
 ### API
 
-#####.Connect()
+#### .Connect()
 Connects to ChromeCast device.
-#####.Load(`Uri contentUri, string contentType, MediaMetadata metadata, bool autoPlay, StreamType streamType`)
+#### .Load(`Uri contentUri, string contentType, MediaMetadata metadata, bool autoPlay, StreamType streamType`)
 Loads new content.
-#####.LoadVideo(`Uri contentUri, string contentType, MovieMediaMetadata metadata, bool autoPlay, StreamType streamType`)
+#### .LoadVideo(`Uri contentUri, string contentType, MovieMediaMetadata metadata, bool autoPlay, StreamType streamType`)
 Loads new video content.
-#####.LoadPhoto(`Uri contentUri, string contentType, PhotoMediaMetadata metadata, bool autoPlay, StreamType streamType`)
+#### .LoadPhoto(`Uri contentUri, string contentType, PhotoMediaMetadata metadata, bool autoPlay, StreamType streamType`)
 Loads new photo content.
-#####.LoadMusic(`Uri contentUri, string contentType, MusicTrackMediaMetadata metadata, bool autoPlay, StreamType streamType`)
+#### .LoadMusic(`Uri contentUri, string contentType, MusicTrackMediaMetadata metadata, bool autoPlay, StreamType streamType`)
 Loads new music content.
-#####.Play()
+#### .Play()
 Begins playback of the content that was loaded with the load call.
-#####.Pause()
+#### .Pause()
 Pauses playback of the current content.
-#####.Seek(`double position`)
+#### .Seek(`double position`)
 Sets the current position in the stream.
-#####.SetVolume(`double level`)
+#### .SetVolume(`double level`)
 Sets the stream volume.
-#####.SetMuted(`bool muted`)
+#### .SetMuted(`bool muted`)
 Mutes/Unmutes the stream volume.
-#####.StopApp()
+#### .StopApp()
 Stops playback of the current content.
-#####.LaunchApp(`string applicationId`)
-#####.GetRunningApp()
+#### .LaunchApp(`string applicationId`)
+#### .GetRunningApp()
 Gets running application.
-#####.GetAppAvailability(`string applicationId`)
+#### .GetAppAvailability(`string applicationId`)
 Checks whether an application is available.
-#####.GetStatus()
+#### .GetStatus()
 Retrieves the media status.
 
 
